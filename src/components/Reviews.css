@@ -1,0 +1,103 @@
+.review-parent{
+   display: flex;
+   justify-content: center;
+   gap: 35px;
+}
+.review-card-main{
+ border: 2px solid #000000;
+ padding: 20px;
+ box-shadow: 0px 2px 1px  2px gray;
+ border-radius: 40px;
+ margin: 20px 0px 60px 0px;
+ width: 50%;
+ background-color: #fff !important;
+  
+ }
+.review-cards{
+   background-color: #cfdfc9;
+   box-shadow: 0px 5px 5px  gray inset;
+   padding: 30px;
+   text-align: center;
+   font-size: 35px;
+   border-radius: 30px;
+    
+}
+.presonal-data-review{
+     display: flex;
+     justify-content: space-evenly;
+     align-items: center;
+     margin-top: 40px;
+}
+   
+@media screen and (min-width:320px) and (max-width:576px) {
+       .review-cards{
+          background-color: #cfdfc9;
+          box-shadow: 0px 5px 5px  gray inset;
+          padding: 5px;
+          text-align: center;
+          font-size: 35px;
+          border-radius: 30px;
+           
+       }
+       .presonal-data-review{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            margin-top: 40px;
+            flex-direction: column;
+       }
+     .review-parent{
+          display: flex;
+          justify-content: center;
+          gap: 35px;
+          flex-direction: column;
+       }
+       .review-card-main{
+        border: 2px solid #000000;
+        padding: 20px;
+        box-shadow: 0px 2px 1px  2px gray;
+        border-radius: 40px;
+        margin: 10px 0px 20px 0px;
+        width: 100%;
+        }
+        .user-pic-in-review{
+          width: 100px;
+      }
+      
+}
+
+@media screen and (min-width:577px) and (max-width:768px) {
+     .review-cards{
+          background-color: #cfdfc9;
+          box-shadow: 0px 5px 5px  gray inset;
+          padding: 5px;
+          text-align: center;
+          font-size: 35px;
+          border-radius: 30px;
+           
+       }
+       .presonal-data-review{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            margin-top: 40px;
+            flex-direction: column;
+       }
+     .review-parent{
+          display: flex;
+          justify-content: center;
+          gap: 35px;
+          flex-direction: column;
+       }
+       .review-card-main{
+        border: 2px solid #000000;
+        padding: 20px;
+        box-shadow: 0px 2px 1px  2px gray;
+        border-radius: 40px;
+        margin: 10px 0px 20px 0px;
+        width: 100%;
+        }
+      .user-pic-in-review{
+          width: 100px;
+      }
+}

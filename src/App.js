@@ -1,25 +1,58 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { BrowserRouter , Route, Routes } from 'react-router-dom';
+import { lazy,Suspense } from 'react';
+import HomeLoader from './components/HomeLoader';
+import NotFound from './components/NotFound';
+ 
+ 
 
-function App() {
+const Home = lazy(()=>import ('./Home'))
+const Login = lazy(()=>import ('./Login'))
+const Signup = lazy(()=>import ('./SignIn'))
+const About = lazy(()=>import ('./components/About'))
+const WhyUs = lazy(()=>import ('./components/WhyUs'))
+const Faqs = lazy(()=>import ('./components/Faqs'))
+const Service = lazy(()=>import ('./components/Services'))
+const Processteps = lazy(()=>import ('./components/Processteps'))
+const Testinominal = lazy(()=>import ('./components/Reviews'))
+const Cart = lazy(()=>import ('./components/Cart'))
+const Intergrations = lazy(()=>import ('./components/Intergrations'))
+const ForgetPass = lazy(()=>import ('./components/ForgetPass'))
+const VerifyAccount = lazy(()=>import ('./components/VerifyAccount'))
+const UpdatePass = lazy(()=>import ('./components/UpdatePass'))
+
+
+
+
+
+
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+     <>
+     <BrowserRouter>
+       <Suspense fallback={HomeLoader}> 
+      <Routes>
+      <Route path='*'  element={<NotFound/>}/>
+        <Route path='/'  element={<Home/>}/>
+        <Route path='/login'  element={<Login/>}/>
+        <Route path='/signup'  element={<Signup/>}/>
+        <Route path='/aboutus'  element={<About/>}/>
+        <Route path='/whyus'  element={<WhyUs/>}/>
+        <Route path='/load'  element={<HomeLoader/>}/>
+        <Route path='/faqs'  element={<Faqs/>}/>
+        <Route path='/Services'  element={<Service/>}/>
+        <Route path='/orderprocess'  element={<Processteps/>}/>
+        <Route path='/testinominal'  element={<Testinominal/>}/>
+        <Route path='/cart'  element={<Cart/>}/>
+        <Route path='/integrations'  element={<Intergrations/>}/>
+        <Route path='/forgetpassword'  element={<ForgetPass/>}/>
+        <Route path='/verifyotp'  element={<VerifyAccount/>}/>
+        <Route path='/updatepassword'  element={<UpdatePass/>}/>
 
-export default App;
+      </Routes>
+      </Suspense>
+     </BrowserRouter>
+     
+     </>
+  )
+}

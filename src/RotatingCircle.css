@@ -1,0 +1,105 @@
+.circle-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 160vh;
+  overflow: hidden;
+}
+
+.dashed-circle {
+  position: absolute;
+  width: 50%;
+  height: 65%;
+  border: 2px dashed #000;
+  border-radius: 50%;
+  z-index: 1;
+  
+}
+
+.circle {
+  position: relative;
+  width: 70%;
+  height: 80%;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+
+.circle-item {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  font-size: 12px;
+  text-align: center;
+  transform-origin: 50% 70%; 
+  transition: transform 0.2s ease, box-shadow 0.2s ease; /* Added transition for smoother interactions */
+}
+
+/* Position items around the circle border */
+.satisfaction { transform: rotate(0deg) translate(0, -190%); }
+.order { transform: rotate(60deg) translate(0, -195%); }
+.payment { transform: rotate(120deg) translate(0, -180%); }
+.inventory { transform: rotate(180deg) translate(0, -172%); }
+.shipping { transform: rotate(240deg) translate(0, -180%); }
+.delivery { transform: rotate(300deg) translate(0, -192%); }
+.billing { transform: rotate(360deg) translate(0, -200%); }
+
+.center-text {
+  position: absolute;
+  text-align: center;
+  width: 250px;
+  z-index: 3;
+  font-size: 14px;
+}
+.middle-text {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.item-heading {
+  position: absolute;
+  top: -50px; /* Adjust the distance above the image */
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  color: #000;
+  background-color: #ebebeb;
+  width: 100px;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .circle {
+    width: 80%;
+    height: 80%;
+  }
+
+  .circle-item {
+    width: 70px;
+    height: 70px;
+    font-size: 10px;
+    transform-origin: 50% 80%;
+  }
+
+  .satisfaction, .order, .payment, .inventory, .shipping, .delivery, .billing {
+    transform: translate(0, -160%);
+  }
+
+  .center-text {
+    width: 100px;
+    font-size: 12px;
+  }
+}
+
+ 

@@ -1,0 +1,23 @@
+.forget-child{
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.forget-form{
+  
+    padding: 10px;
+    border-radius: 4px ;
+    background: #6a9c89a8;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.email-input-in-forget{
+    padding:8px;
+    width: 100%;
+    text-align: center;
+border: none;
+border-radius: 5px;
+}
+.otp-btn-in-forget{
+    width: 100%;
+}

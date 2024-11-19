@@ -1,0 +1,84 @@
+.verify-account-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+}
+
+.verify-account {
+    text-align: center;
+    background-color: #6a9c898b ;
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px;
+    margin: 50px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .verify-image {
+    width: 100px;
+    margin-bottom: 20px;
+  }
+  
+  .code-inputs {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .code-inputs input {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    font-size: 1.2rem;
+    border: 2px solid #6A9C89;;
+    border-radius: 5px;
+  }
+  
+  .submit-button-in-otp {
+    background-color: #6A9C89 ;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 60%;
+    font-weight: bold;
+
+  }
+  
+  .cancel-button-in-otp {
+    background-color: transparent;
+    color: #ffffff;
+    border: none;
+    margin-top: 10px;
+    cursor: pointer;
+    width: 100%;
+    font-weight: bold;
+  }
+  
+  .message-in-otp {
+    margin-top: 20px;
+    color: red;
+  }
+  
+  @media screen  and (min-width:325px) and (max-width:400px){
+    
+.verify-account {
+    text-align: center;
+    background-color: #6a9c898b ;
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  .code-inputs input {
+    width: 40px;
+    height: 45px;
+    text-align: center;
+    font-size: 1.2rem;
+    border: 2px solid #6A9C89;;
+    border-radius: 5px;
+  }
+  }

@@ -1,0 +1,110 @@
+.about-main{
+    height: fit-content;
+    position: relative;
+    padding-bottom: 50px;
+}
+.about-img{
+    height: 100%;
+    width: 100%;
+}
+.about-us-head{
+position: absolute;
+top: -25px;
+z-index: 22;
+left: 32%;
+font-size: 86px;
+text-decoration: underline;
+font-weight: bold;
+}
+.about-content{
+    padding-top: 60px;
+    font-size: 20px;
+    color: #000000;
+    text-align: justify;
+}
+
+
+/* ________________________why us____________________________ */
+.why-us-main{
+height: fit-content;
+display: flex;
+justify-content: center;
+align-items: center;
+min-height: 100vh;
+background-image: url('../images/aboutimg.png');
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+.why-us-cards-main{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+.about-inner{
+    display: flex;
+}
+.why-us-cards-inner{
+    background-color: #ffffff;
+    box-shadow: 0px 3px 5px gray;
+    width: 400px;
+}
+.why-us{
+    text-align: center;
+    font-size: 50px;
+    text-decoration: underline;
+    margin-bottom: 50px;
+}
+.why-heading{
+    color: #CB5819;
+    font-size: 24px;
+}
+.why-content{
+    font-size: 18px;
+    color: #000000;
+}
+
+@media screen and (min-width:320px) and (max-width:768px) {
+    .about-us-head{
+        position: absolute;
+        top: -17px;
+        z-index: 22;
+        left: 20%;
+        font-size: 76px;
+        text-decoration: underline;
+        font-weight: bold;
+        }
+    .about-inner{
+        display: flex;
+        flex-direction: column;
+    }
+    .about-img{
+        height: 400px;
+        width: 100%;
+    }
+    .why-us-main{
+        padding: 30px;
+    }
+    .why-us-cards-main{
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        flex-direction: column;
+        align-items: center;
+       padding: 10px;
+    }
+    .why-us-cards-inner{
+        background-color: #ffffff;
+        box-shadow: 0px 3px 5px gray;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width:769px) and (max-width:1176px) {
+    .why-us-cards-main{
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+       
+    }
+}

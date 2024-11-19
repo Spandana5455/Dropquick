@@ -1,0 +1,118 @@
+ 
+  
+  .not-found-container {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    z-index: 1;
+    background-color: #141414;
+  }
+  
+  .animation-wrapper {
+    z-index: 2;
+  }
+  
+  .error-code {
+    font-size: 10rem;
+    font-weight: bold;
+    margin: 0;
+    animation: fadeIn 1.5s ease-in-out forwards;
+  }
+  
+  .error-message {
+    font-size: 2.5rem;
+    margin: 20px 0;
+    animation: fadeIn 2s ease-in-out forwards;
+  }
+  
+  .error-description {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    animation: fadeIn 2.5s ease-in-out forwards;
+  }
+  
+  .home-button {
+    display: inline-block;
+    padding: 12px 25px;
+    font-size: 1rem;
+    background-color: #6a9c89;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: transform 0.3s ease, background 0.3s ease;
+    animation: fadeIn 3s ease-in-out forwards;
+  }
+  
+  .home-button:hover {
+    background-color: #cb5819;
+    transform: scale(1.1);
+  }
+  
+  .animated-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    overflow: hidden;
+  }
+  
+  .ncircle {
+    position: absolute;
+    border-radius: 50%;
+    background:#cb5719a2;
+    animation: moveCircles 10s infinite linear;
+  }
+  
+  .ncircle-1 {
+    width: 300px;
+    height: 300px;
+    top: 10%;
+    left: 20%;
+    animation-delay: 0s;
+  }
+  
+  .ncircle-2 {
+    width: 400px;
+    height: 400px;
+    top: 40%;
+    left: 60%;
+    animation-delay: 2s;
+  }
+  
+  .ncircle-3 {
+    width: 200px;
+    height: 200px;
+    bottom: 20%;
+    right: 15%;
+    animation-delay: 4s;
+  }
+  
+  @keyframes moveCircles {
+    0% {
+      transform: translateY(0) rotate(0);
+    }
+    50% {
+      transform: translateY(-50px) rotate(180deg);
+    }
+    100% {
+      transform: translateY(0) rotate(360deg);
+    }
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

@@ -1,0 +1,68 @@
+ .navbar-width{
+    width: auto;
+ }
+ #drop-down-show{
+    position: absolute;
+    z-index: 33;
+ }
+ .main-nav-text{
+    font-size: 20px;
+    color: #000000;
+    font-weight: bold;
+    cursor: pointer;
+ }
+ #main-navbar-bg{
+    background-color: #ffffff !important;
+    height: 100px;
+ }
+ .nav-icons{
+   font-size: 40px;
+   color: #000000;
+   cursor: pointer;
+ }
+ .sign-in-button-nav{
+   background-color:  #6A9C89;
+   font-size: 23px;
+   color: white;
+ }
+ .sign-in-button-nav:hover{
+   background-color:  #6A9C89;
+   color: white;
+ }
+ 
+
+ @media screen  and (min-width:325px) and (max-width:580px){
+   .navbar-width{
+      width: auto;
+   }
+   #drop-down-show{
+      position: absolute;
+      z-index: 33;
+   }
+   .main-nav-text{
+      font-size: 22px;
+      color: #000000;
+      font-weight: bold;
+      cursor: pointer;
+      
+   }
+   #main-navbar-bg{
+      background-color: #ffffff !important;
+      height: 100px;
+   }
+   .nav-icons{
+     font-size: 45px;
+     color: #000000;
+     cursor: pointer;
+   }
+   .sign-in-button-nav{
+     background-color:  #6A9C89;
+     font-size: 23px;
+     color: white;
+   }
+   .sign-in-button-nav:hover{
+     background-color:  #6A9C89;
+     color: white;
+   }
+  
+ }
