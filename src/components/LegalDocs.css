@@ -1,0 +1,64 @@
+
+.custom{
+    padding: 2rem !important; /* Reduce internal spacing */
+    height: auto !important; /* Let the height adjust to the content */
+    min-height: 2rem !important; /* Set a smaller minimum height */
+    align-items: start; /* Vertical alignment of content */
+    margin-bottom: 0rem;
+}
+
+.custom-gap {
+    margin-left: 1000px !important; /* Override other styles */
+}
+
+@media (max-width: 1200px) {
+    .custom-gap {
+        margin-left: 500px !important; /* Adjust margin for medium screens */
+    }
+}
+
+
+
+@media (min-width: 320px) and (max-width: 567px) {
+    .custom {
+        padding: 0.5rem !important; /* Minimal padding for small screens */
+        height: auto !important; /* Let the height adjust dynamically */
+        min-height: 1rem !important; /* Set a smaller minimum height */
+        align-items: center; /* Center-align for better visibility */
+        margin-bottom: 0.5rem;
+        margin-right: 30px; /* Add a small bottom margin */
+    }
+
+    .custom-gap {
+        margin-left: 100px !important; /* Remove left margin for compact view */
+    }
+}
+
+@media (min-width: 567px) and (max-width: 768px) {
+    .custom {
+        padding: 0.5rem !important; /* Slightly larger padding for medium screens */
+        height: auto !important; /* Let the height adjust to the content */
+        min-height: 1.5rem !important; /* Adjust minimum height for better balance */
+        align-items: flex-start; /* Keep content aligned at the start */
+        margin-bottom: 0.5rem; /* Maintain spacing between elements */
+    }
+
+    .custom-gap {
+        margin-left: 300px !important; /* Reduce margin for better fit */
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .custom {
+        padding: 0.5rem !important; /* Provide slightly more padding for larger screens */
+        height: auto !important; /* Allow dynamic height adjustment */
+        min-height: 1rem !important; /* Maintain a proportional minimum height */
+        align-items: flex-start; /* Keep content aligned at the top */
+        margin-bottom: 0.5rem; /* Add some spacing below */
+    }
+
+    .custom-gap {
+        margin-left: 500px !important; /* Adjust margin to balance content */
+    }
+}
+

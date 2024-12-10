@@ -58,25 +58,23 @@ export default function Navbar() {
                                 <span className="nav-link main-nav-text" onClick={() => { navigate('/integrations') }}>Integrations</span>
                             </li>
                             <li className="nav-item dropdown">
-                                <span
-                                    className="nav-link   main-nav-text"
-                                   
-                                    role="button"
-                                    data-bs-toggle="dropdown"
-                                    aria-expanded="false"
-                                    style={{ display: "flex", alignItems: "center" }}
-                                >
-                                    Resources <span className=" mt-1 material-symbols-outlined">
+                                <span 
+                                className="nav-link   main-nav-text" 
+                                role="button" 
+                                data-bs-toggle="dropdown" 
+                                aria-expanded="false"
+                                    style={{ display: "flex", alignItems: "center" }}> 
+                                    Resources 
+                                    <span className=" mt-1 material-symbols-outlined">
                                         keyboard_arrow_down
                                     </span>
                                 </span>
                                 <ul className="dropdown-menu dropdown-menu-light" id='drop-down-show'>
                                     <li className=' '><span className="dropdown-item " onClick={() => { navigate('/services') }}>Customer Services</span></li>
                                     <li><hr className="dropdown-divider" /></li>
-                                    <li><span className="dropdown-item">Blogs</span></li>
+                                    <li className=' '><span className="dropdown-item" onClick={() => { navigate('/helpcenter') }}>Help Center</span></li>
                                     <li><hr className="dropdown-divider" /></li>
-                                    <li><span className="dropdown-item">Help Center</span></li><li><hr className="dropdown-divider" /></li>
-                                    <li><span className="dropdown-item">Trade Assurance</span></li>
+                                    <li><span className="dropdown-item">Shop by Phone</span></li>
                                 </ul>
                             </li>
                         </ul>
@@ -136,18 +134,18 @@ export default function Navbar() {
                                         Products
                                     </span>
                                     <ul className="dropdown-menu dropdown-menu-light " id='drop-down-show'>
-                                        <li><span className="dropdown-item">Action</span></li>
+                                        <li><span className="dropdown-item">Electronics</span></li>
                                         <li><hr className="dropdown-divider" /></li>
-                                        <li><span className="dropdown-item">Another action</span></li>
+                                        <li><span className="dropdown-item">Furniture</span></li>
                                         <li><hr className="dropdown-divider" /></li>
                                         <li><span className="dropdown-item">Something else here</span></li>
                                     </ul>
                                 </li>
                                 <li className="nav-item">
-                                    <span className="nav-link main-nav-text" aria-current="page" >About Us</span>
+                                    <span className="nav-link main-nav-text" aria-current="page" onClick={()=>{navigate('/aboutus')}}>About Us</span>
                                 </li>
                                 <li className="nav-item">
-                                    <span className="nav-link main-nav-text">Integrations</span>
+                                    <span className="nav-link main-nav-text" onClick={() => { navigate('/integrations') }}>Integrations</span>
                                 </li>
                                 <li className="nav-item dropdown">
                                     <span
@@ -160,11 +158,11 @@ export default function Navbar() {
                                         Resources
                                     </span>
                                     <ul className="dropdown-menu dropdown-menu-light" id='drop-down-show'>
-                                        <li className=' '><span className="dropdown-item ">Action</span></li>
+                                        <li className=' '><span className="dropdown-item" onClick={() => { navigate('/services') }}>Customer Services</span></li>
                                         <li><hr className="dropdown-divider" /></li>
-                                        <li><span className="dropdown-item">Another action</span></li>
+                                        <li><span className="dropdown-item" onClick={() => { navigate('/helpcenter') }}>Help Center</span></li>
                                         <li><hr className="dropdown-divider" /></li>
-                                        <li><span className="dropdown-item">Something else here</span></li>
+                                        <li><span className="dropdown-item">Shop by Phone</span></li>
                                     </ul>
                                 </li>
                             </ul>
@@ -172,7 +170,7 @@ export default function Navbar() {
                             {/* Right aligned icons and buttons */}
                             <ul className="navbar-nav   gap-5  align-items-center">
                                 <li className="nav-item">
-                                    <span className="nav-link material-symbols-outlined nav-icons">
+                                    <span className="nav-link material-symbols-outlined nav-icons" onClick={() => { navigate('/cart') }}>
                                         shopping_cart
                                     </span>
                                 </li>

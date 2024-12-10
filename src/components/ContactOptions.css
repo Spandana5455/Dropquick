@@ -1,0 +1,102 @@
+.card.card-custom {
+    padding: 2rem !important; /* Reduce internal spacing */
+    height: auto !important; /* Let the height adjust to the content */
+    min-height: 2rem !important; /* Set a smaller minimum height */
+    align-items: start; /* Vertical alignment of content */
+    margin-bottom: 0rem; /* Adjust spacing between cards */
+}
+.card.card-custom .card-body {
+    padding: 0.5rem !important; /* Reduce padding inside card body */
+}
+  
+.card-body {
+    display: flex; /* Enables flexbox */
+    align-items: start; /* Aligns items vertically in the center */
+    justify-content: space-between; /* Creates space between elements */
+}
+  
+.card-body span:first-child {
+    text-align: start; /* Ensures text aligns to the start */
+    flex-grow: 1;  /* Pushes the next element to the far end */
+}
+  
+.card-body span:last-child {
+    margin-left: 1rem; /* Adds spacing between the text and ">" */
+}
+.gap-custom{
+    margin-left: 715px !important; /* Override other styles */
+}
+.gap2-custom{
+    margin-left: 900px !important; /* Override other styles */;
+}
+
+@media (min-width: 320px) and (max-width: 567px) {
+    .card.card-custom {
+        padding: 1rem !important;
+        min-height: 1.5rem !important;
+        margin-bottom: 0rem; /* Add spacing between cards */
+    }
+    .card.card-custom .card-body {
+        padding: 0.25rem !important; /* Reduce internal card body padding */
+        flex-direction: column; /* Stack elements vertically */
+        align-items: start; /* Align elements at the start */
+    }
+    .card-body span:first-child {
+        flex-grow: 0; /* Disable flex-grow for better stacking */
+        margin-bottom: 0rem; /* Add spacing between stacked elements */
+    }
+    .gap-custom {
+        margin-left: 260px !important;  /* Remove large margins for smaller screens */
+    }
+    .gap2-custom {
+        margin-left: 260px !important;
+    }
+}
+
+@media (min-width: 567px) and (max-width: 768px) {
+    .card.card-custom {
+        padding: 1rem !important;
+        min-height: 2rem !important;
+        margin-bottom: 0rem;
+    }
+    .card.card-custom .card-body {
+        padding: 0.5rem !important;
+        flex-direction: row; /* Keep horizontal layout */
+        align-items: start;
+    }
+    .card-body span:first-child {
+        flex-grow: 1;
+        white-space: nowrap;
+    }
+    .gap-custom {
+        margin-left: 40px !important; /* Adjust margins for medium screens */
+    }
+    .gap2-custom {
+        margin-left: 210px !important;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .card.card-custom {
+        padding: 1rem !important;
+        min-height: 2.5rem !important;
+        margin-bottom: 0rem;
+    }
+    .card.card-custom .card-body {
+        padding: 0rem !important;
+        flex-direction: row;
+        
+    }
+    .card-body span:first-child {
+        flex-grow: 1;
+        white-space: nowrap;
+    }
+    .gap-custom {
+        margin-left: 200px !important; /* Scale margins proportionally */
+    }
+    .gap2-custom {
+        margin-left: 375px !important;
+    }
+}
+
+

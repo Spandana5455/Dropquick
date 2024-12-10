@@ -20,8 +20,10 @@ const Intergrations = lazy(()=>import ('./components/Intergrations'))
 const ForgetPass = lazy(()=>import ('./components/ForgetPass'))
 const VerifyAccount = lazy(()=>import ('./components/VerifyAccount'))
 const UpdatePass = lazy(()=>import ('./components/UpdatePass'))
-
-
+const HelpCenter = lazy(()=>import ('./components/helpcenter'))
+const TroubleshootingFAQs = lazy(()=>import ('./components/TroubleshootingFAQs'))
+const ContactOptions = lazy(()=>import ('./components/ContactOptions'))
+const LegalDocs = lazy(()=>import('./components/LegalDocs'))
 
 
 
@@ -48,6 +50,10 @@ export default function App() {
         <Route path='/forgetpassword'  element={<ForgetPass/>}/>
         <Route path='/verifyotp'  element={<VerifyAccount/>}/>
         <Route path='/updatepassword'  element={<UpdatePass/>}/>
+        <Route path='/helpcenter' element={<HelpCenter/>}/>
+        <Route path='/TroubleshootingFAQs' element={<TroubleshootingFAQs/>}/>
+        <Route path='/ContactOptions' element={<ContactOptions/>}/>
+        <Route path='/LegalDocs' element={<LegalDocs/>}/>
 
       </Routes>
       </Suspense>

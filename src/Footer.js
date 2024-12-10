@@ -24,7 +24,7 @@ export default function Footer() {
                                     <h1 className='footer-head'>Drop Quick</h1>
                                 </div>
                             </div>
-                            <p className='footer-text pt-2'>Connecting you with the best couriers to get your packages delivered in no time.</p>
+                            <p className='footer-text pt-2'>Collaborating with trustworthy courier providers to guarantee that your items get at their destination promptly and securely. Enjoy flawless delivery with unparalleled efficiency and real-time tracking!</p>
                            <div className='d-flex justify-content-center'>
                             <div className='footer-icons-main'>
                                 <div>
@@ -58,15 +58,16 @@ export default function Footer() {
                             <div>
                                 <h4 className='footer-headings'> Services</h4>
                                 <p className='footer-text' onClick={()=>{navigate('/orderprocess')}}>Order Processing</p>
-                                <p className='footer-text'>Pricing Plan</p>
-                                <p className='footer-text' >Blogs</p>
+                                <p className='footer-text'>Shipping</p>
                                 <p className='footer-text' onClick={()=>{navigate('/Services')}}>Customer Services</p>
+                                <p className='footer-text' onClick={()=>{navigate('/helpcenter')}}>Help Center</p>
                             </div>
                         </div>
                         <div className="col-sm-6 col-12 col-md-3">
                             <div>
                                 <h4 className='footer-headings'>Contact US</h4>
                                 <p className='footer-text'>+91 - 1234567890</p>
+                                <p className='footer-text'>dropquick.in@gamil.com</p>
                                 <p className='footer-text'> 4th Floor And 5th Floor, Plot No: 4 & 5,
                                     behind Image Hospital,
                                     Arunodaya Colony, Vittal Rao Nagar, Madhapur, Telangana - 500081

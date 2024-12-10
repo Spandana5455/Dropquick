@@ -22,7 +22,7 @@ export default function Home() {
         <h1 className='cirle-head'>What We Do Exactly ? </h1>
         <RotatingCircle/>
     </div>
-    <h1 className='cirle-head'> Buyer Testiomoial</h1>
+    <h1 className='cirle-head'> Buyer Testimonial</h1>
     <Reviews/>
     <Footer/>
     </>

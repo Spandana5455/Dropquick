@@ -9,9 +9,9 @@
 }
 .about-us-head{
 position: absolute;
-top: -25px;
+top: -20px;
 z-index: 22;
-left: 32%;
+right: 28%;
 font-size: 86px;
 text-decoration: underline;
 font-weight: bold;

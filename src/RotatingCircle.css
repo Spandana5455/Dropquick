@@ -1,3 +1,4 @@
+/* Default styles for larger screens */
 .circle-container {
   position: relative;
   display: flex;
@@ -14,13 +15,12 @@
   border: 2px dashed #000;
   border-radius: 50%;
   z-index: 1;
-  
 }
 
 .circle {
   position: relative;
   width: 70%;
-  height: 80%;
+  height: 90%;
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -30,18 +30,16 @@
 
 .circle-item {
   position: absolute;
-  width: 150px;
-  height: 150px;
+  width: 170px;
+  height: 170px;
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #fff;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   font-size: 12px;
   text-align: center;
-  transform-origin: 50% 70%; 
-  transition: transform 0.2s ease, box-shadow 0.2s ease; /* Added transition for smoother interactions */
+  transform-origin: 50% 70%;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 /* Position items around the circle border */
@@ -56,20 +54,20 @@
 .center-text {
   position: absolute;
   text-align: center;
-  width: 250px;
+  width: 300px;
   z-index: 3;
-  font-size: 14px;
+  font-size: 25px;
 }
 .middle-text {
-  font-size: 30px;
+  font-size: 35px;
   font-weight: bold;
 }
 
 .item-heading {
   position: absolute;
-  top: -50px; /* Adjust the distance above the image */
+  top: -50px;
   text-align: center;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: bold;
   color: #000;
   background-color: #ebebeb;
@@ -80,26 +78,157 @@
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
+  .circle-container {
+    height: 140vh; /* Adjust container height */
+  }
+
+  .dashed-circle {
+    width: 80%; /* Smaller dashed circle */
+    height: 55%;
+    border-width: 1.5px;
+  }
+
   .circle {
-    width: 80%;
-    height: 80%;
+    width: 30%; /* Reduce circle size */
+    height: 30%; /* Keep it round */
   }
 
   .circle-item {
-    width: 70px;
-    height: 70px;
+    width: 80px; /* Smaller circle items */
+    height: 80px;
     font-size: 10px;
-    transform-origin: 50% 80%;
+    transform-origin: 50% 90%; /* Adjust transform origin */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
 
-  .satisfaction, .order, .payment, .inventory, .shipping, .delivery, .billing {
-    transform: translate(0, -160%);
-  }
+  .satisfaction { transform: rotate(0deg) translate(0, -210%); }
+  .order { transform: rotate(60deg) translate(0, -220%); }
+  .payment { transform: rotate(120deg) translate(0, -230%); }
+  .inventory { transform: rotate(180deg) translate(0, -240%); }
+  .shipping { transform: rotate(240deg) translate(0, -230%); }
+  .delivery { transform: rotate(300deg) translate(0, -220%); }
+  .billing { transform: rotate(360deg) translate(0, -210%); }
 
   .center-text {
-    width: 100px;
-    font-size: 12px;
+    width: 200px;
+    font-size: 18px;
+  }
+
+  .middle-text {
+    font-size: 20px;
+  }
+
+  .item-heading {
+    top: -70px;
+    font-size: 15px;
+    width: 70px;
+    padding: 5px;
   }
 }
+
+@media (min-width: 578px) and (max-width: 767px) {
+  .circle-container {
+    height: 140vh;
+  }
+
+  .dashed-circle {
+    width: 65%;
+    height: 50%;
+    border-width: 1.5px;
+  }
+
+  .circle {
+    width: 35%; /* Reduce circle size */
+    height: 35%;
+  }
+
+  .circle-item {
+    width: 90px;
+    height: 90px;
+    font-size: 12px;
+  }
+
+  .satisfaction { transform: rotate(0deg) translate(0, -210%); }
+  .order { transform: rotate(60deg) translate(0, -220%); }
+  .payment { transform: rotate(120deg) translate(0, -230%); }
+  .inventory { transform: rotate(180deg) translate(0, -240%); }
+  .shipping { transform: rotate(240deg) translate(0, -230%); }
+  .delivery { transform: rotate(300deg) translate(0, -220%); }
+  .billing { transform: rotate(360deg) translate(0, -230%); }
+
+  .center-text {
+    width: 200px;
+    font-size: 20px;
+  }
+
+  .middle-text {
+    font-size: 20px;
+  }
+
+  .item-heading {
+    top: -75px;
+    font-size: 16px;
+    width: 90px;
+    padding: 5px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 576px) {
+  .circle-container {
+    height: 140vh; /* Adjust container height */
+  }
+
+  .dashed-circle {
+    width: 100%; /* Smaller dashed circle */
+    height: 55%;
+    border-width: 1.5px; /* Thinner dashed circle border */
+  }
+
+  .circle {
+    width: 20%; /* Reduce circle size */
+    height: 20%; /* Maintain circular shape */
+  }
+
+  .circle-item {
+    width: 80px; /* Smaller circle items */
+    height: 80px;
+    font-size: 10px; /* Reduce font size */
+    transform-origin: 50% 90%; /* Adjust transform origin */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth animation */
+  }
+
+  /* Adjust position for items with more space */
+  .satisfaction { transform: rotate(0deg) translate(0, -210%); }
+  .order { transform: rotate(60deg) translate(0, -220%); }
+  .payment { transform: rotate(120deg) translate(0, -230%); }
+  .inventory { transform: rotate(180deg) translate(0, -240%); }
+  .shipping { transform: rotate(240deg) translate(0, -230%); }
+  .delivery { transform: rotate(300deg) translate(0, -220%); }
+  .billing { transform: rotate(360deg) translate(0, -210%); }
+
+  .center-text {
+    width: 200px; /* Adjust text width */
+    font-size: 18px; /* Adjust font size */
+  }
+
+  .middle-text {
+    font-size: 20px; /* Smaller middle text */
+  }
+
+  .item-heading {
+    top: -70px; /* Adjust the distance above the item */
+    font-size: 15px; /* Smaller font size */
+    width: 70px; /* Narrower heading box */
+    padding: 5px; /* Less padding */
+  }
+}
+
+
+
+
+
+
+
+
 
  

@@ -4,6 +4,7 @@ import Footer from '../Footer'
 import { useEffect } from 'react'
 import './Brands.css'
 import AOS from 'aos';
+import f1 from '../images/f1.png'
 
 
 export default function Faqs() {
@@ -20,7 +21,7 @@ export default function Faqs() {
     <div className="faqs-main container">
        <div className="row ">
         <div className="col-sm-12 col-md-4">
-            <img src="" alt="" />
+            <img src= {f1} alt="FAQs Illustration" style={{ maxWidth: "100%", height: "auto"}} />
         </div>
         <div className="col-sm-12 col-md-8">
             <div>
